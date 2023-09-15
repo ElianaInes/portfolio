@@ -1,0 +1,1482 @@
+@import url('https://fonts.cdnfonts.com/css/tin-doghouse');
+/* font-family: 'Tin Doghouse', sans-serif; */
+
+@import url('https://fonts.cdnfonts.com/css/nothing-up-my-pleasure');
+/* font-family: 'Nothing Up My Pleasure', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nothing Up My Pleasure', sans-serif;
+}
+
+    
+
+nav{
+    background-image: linear-gradient(120deg, #0f0f0f 0%, #151615 100%);
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 60px;
+}
+ 
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    font-family: 'Nothing Up My Pleasure', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background-color: rgb(68, 68, 68);
+    padding: 7px 13px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;  
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width: 960px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+        font-size: 3rem;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(8, 8, 8);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    li a.active, li a:hover{
+        background: none;
+        color: white;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+  
+} 
+
+@media (min-width: 320px){
+  
+    .portada{
+        width: 100%;
+        height: 100vh;
+        background-image: url(img/Fondo_1.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border: 2px solid black;
+        }
+
+    .enlace{
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+
+    .section_quiensoy{
+        width: 100%;
+        margin: 5px 0;
+        background-color: #555555;
+        border: 2px solid black;
+    }
+
+    .box_quiensoy{
+        display: flex;
+        justify-content: center;
+    }
+    .title_quiensoy{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+
+    .img_quiensoy{
+        width: 90%;
+        top: 90px;
+    }
+
+    .descripcion{
+        color: #dde4e3;
+        font-size: 30px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    .section_conocimientos{
+        width: 100%;
+        margin: 5px 0;
+        background-color: #555555;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .title_conocimientos{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+        padding: 15px;
+    }
+    .box_conocimientos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px;
+
+    }
+
+    .conocimientos_img1{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logohtml.png)
+    }
+
+    .conocimientos_img1 .img1:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img2{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logocss.png)
+    }
+
+    .conocimientos_img2 .img2:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img3{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logogit.png)
+    }
+
+    .conocimientos_img3 .img3:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img4{
+        width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logogithub.png)
+    }
+
+    .conocimientos_img4 .img4:hover{
+        opacity: 0;
+    }
+
+
+    .section_proyectos{
+        width: 100%;
+        background-color: #555555;
+        margin: 5px 0;
+        border: 1px solid black;
+
+
+
+    }
+
+    .title_proyectos{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+
+    .proyectos_1{
+        width: 250px;
+        height: 450px;
+        background-color: #dde4e3;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .menumobile{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left: 15%;
+
+    }
+
+    .a_proyectos .img_1{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_1:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_2{
+        width: 250px;
+        height: 450px;
+        background-color: #dde4e3;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .galeriamobile{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left: 15%;
+
+    }
+
+    .a_proyectos .img_2{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_2:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_3{
+        width: 250px;
+        height: 450px;
+        background-color: #dde4e3;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .ryrweb{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left:25%;
+
+    }
+
+    .a_proyectos .img_3{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_3:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_4{
+        width: 250px;
+        height: 450px;
+        background-color: #dde4e3;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .alquimiaweb{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left: 15%;
+
+    }
+
+    .a_proyectos .img_4{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_4:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .section_contacto{
+        width: 100%;
+        background-color: #555555;
+        background-image: url(img/img_55.png);
+        background-size: cover;
+        border: 2px solid black;
+        margin: 5px 0;
+        padding: 30px;
+    }
+
+    .box_form{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .formulario fieldset{
+        border: 1px solid black;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .formulario legend{
+        background-color: black;
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900px;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+    
+    .campo{
+        display: flex;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .campo label{
+        flex-basis: 10rem;
+    }
+    
+    .campo input:not([type="radio"]),
+    .campo textarea,
+    .campo select{
+        flex: 1;
+        border: 1px solid #e1e1e1;
+        padding: 1rem;
+    }
+    
+    
+    
+    .boton{
+        background-color:#0a6c5b ;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1rem;
+        left: 50%;
+        border: 2px solid black;
+        width: 50%;
+    }
+    
+    .boton:hover{
+        background-color: #1f8d7b;
+        cursor: pointer;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100px;
+        border: 2px solid black;
+        margin: 5px 0 0 ;
+        background-color: #000000;
+        text-align: center;
+        color: #fff;
+    }
+
+
+    .menu_footer .a_footer{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 10px;
+        margin: 15px auto;
+    }
+
+
+    .icons{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .a_icons{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .legend{
+        margin: 10px;
+    }
+
+    .autor{
+        font-size: 10px;
+
+    }
+
+}
+
+
+@media (min-width: 550px){
+
+    .portada{
+        width: 100%;
+        height: 900px;
+        background-image: url(img/Fondo_2.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border: 2px solid black;
+        }
+
+    .enlace{
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+
+    .section_quiensoy{
+        width: 100%;
+        margin: 5px 0;
+        background-color: #555555;
+        border: 2px solid black;
+    }
+
+    .box_quiensoy{
+        display: flex;
+        justify-content: center;
+    }
+    .title_quiensoy{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 4.5rem;
+        padding: 20px;
+    }
+
+    .img_quiensoy{
+        width: 90%;
+        top: 90px;
+    }
+
+    .descripcion{
+        color: #dde4e3;
+        font-size: 30px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    .section_conocimientos{
+        width: 100%;
+        height: 500px;
+        margin: 5px 0;
+        background-color: #555555;
+        border: 2px solid black;
+        padding: 20px;
+
+
+    }
+
+    .title_conocimientos{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .box_conocimientos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .conocimientos_img1{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logohtml.png)
+    }
+
+    .conocimientos_img1 .img1:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img2{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logocss.png)
+    }
+
+    .conocimientos_img2 .img2:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img3{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logogit.png)
+    }
+
+    .conocimientos_img3 .img3:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img4{
+        width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logogithub.png)
+    }
+
+    .conocimientos_img4 .img4:hover{
+        opacity: 0;
+    }
+
+    .section_proyectos{
+        width: 100%;
+        height: 230vh;
+        background-color: #555555;
+        margin: 5px 0;
+        border: 1px solid black;
+    }
+
+    .box_proyectos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+    .title_proyectos{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+        padding: 20px;
+    }
+
+    .proyectos_1{
+        width: 250px;
+        height: 450px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .menumobile{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left: 15%;
+
+    }
+
+    .a_proyectos .img_1{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_1:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_2{
+        width: 250px;
+        height: 450px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .galeriamobile{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left: 15%;
+
+    }
+
+    .a_proyectos .img_2{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_2:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_3{
+        width: 250px;
+        height: 450px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .ryrweb{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left:25%;
+
+    }
+
+    .a_proyectos .img_3{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_3:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_4{
+        width: 250px;
+        height: 450px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .alquimiaweb{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        padding: 8px;
+        top: 40%;
+        left: 15%;
+
+    }
+
+    .a_proyectos .img_4{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_4:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .section_contacto{
+        width: 100%;
+        background-color: #555555;
+        background-image: url(img/img_55.png);
+        background-size: cover;
+        border: 2px solid black;
+        margin: 5px 0;
+        padding: 30px;
+    }
+
+    .box_form{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .formulario fieldset{
+        border: 1px solid black;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .formulario legend{
+        background-color: black;
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900px;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+    
+    .campo{
+        display: flex;
+        margin-bottom: 2rem;
+    
+    }
+    
+    .campo label{
+        flex-basis: 10rem;
+    }
+    
+    .campo input:not([type="radio"]),
+    .campo textarea,
+    .campo select{
+        flex: 1;
+        border: 1px solid #e1e1e1;
+        padding: 1rem;
+    }
+    
+    .boton{
+        background-color:#0a6c5b ;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1rem;
+        left: 50%;
+        border: 2px solid black;
+        width: 50%;
+    }
+    
+    .boton:hover{
+        background-color: #1f8d7b;
+        cursor: pointer;
+    }
+
+    .footer{
+        width: 100%;
+        height: 200px;
+        border: 2px solid black;
+        margin: 5px 0 0 ;
+        background-color: #000000;
+        text-align: center;
+        color: #fff;
+    }
+
+
+    .menu_footer .a_footer{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        margin: 15px;
+    }
+
+
+    .icons{
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .a_icons{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .legend{
+        margin: 15px;
+    }
+
+    .autor{
+        font-size: 15px;
+
+    }
+
+}
+
+@media (min-width: 800px){
+
+    .portada{
+        width: 100%;
+        height: 900px;
+        background-image: url(img/Fondo_3.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border: 2px solid black;
+        }
+
+    .enlace{
+        padding-left: 15px;
+    }
+   
+
+    .section_quiensoy{
+        width: 100%;
+        margin: 5px 0;
+        background-color: #555555;
+        border: 2px solid black;
+    }
+
+    .box_quiensoy{
+        display: flex;
+        justify-content: center;
+    }
+    .title_quiensoy{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 6rem;
+        padding: 20px;
+    }
+
+    .img_quiensoy{
+        width: 90%;
+        top: 90px;
+    }
+
+    .descripcion{
+        color: #dde4e3;
+        font-size: 35px;
+        margin: 15px;
+        text-align: center;
+    }
+
+
+    .section_conocimientos{
+        width: 100%;
+        margin: 5px 0;
+        background-color: #555555;
+        border: 2px solid black;
+        padding: 20px;
+
+
+    }
+
+    .title_conocimientos{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .box_conocimientos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .conocimientos_img1{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logohtml.png)
+    }
+
+    .conocimientos_img1 .img1:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img2{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logocss.png)
+    }
+
+    .conocimientos_img2 .img2:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img3{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logogit.png)
+    }
+
+    .conocimientos_img3 .img3:hover{
+        opacity: 0;
+    }
+
+    .conocimientos_img4{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(img/logogithub.png)
+    }
+
+    .conocimientos_img4 .img4:hover{
+        opacity: 0;
+    }
+
+    .section_proyectos{
+        width: 100%;
+        height: 100%;
+        background-color: #555555;
+        margin: 5px 0;
+        border: 1px solid black;
+    }
+
+    .box_proyectos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+    .title_proyectos{
+        font-family: 'Nothing Up My Pleasure', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+        padding: 20px;
+    }
+
+    .proyectos_1{
+        width: 600px;
+        height: 800px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .menumobile{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        font-size: 75px;
+        padding: 8px;
+        top: 40%;
+        left: 10%;
+
+    }
+
+    .img_1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .a_proyectos .img_1{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_1:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_2{
+        width: 600px;
+        height: 800px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .galeriamobile{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        font-size: 55px;
+        padding: 8px;
+        top: 40%;
+        left: 17%;
+
+    }
+
+    .img_2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .a_proyectos .img_2{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_2:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_3{
+        width: 600px;
+        height: 800px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .ryrweb{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        font-size: 80px;
+        padding: 8px;
+        top: 37%;
+        left:18%;
+    }
+
+    .img_3{
+        width: 100%;
+        height: 100%;
+    }
+
+    .a_proyectos .img_3{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_3:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .proyectos_4{
+        width: 600px;
+        height: 800px;
+        background-color: #ffffff91;
+        margin: 40px auto;
+        position: relative;
+
+    }
+
+    .alquimiaweb{
+        position: absolute;
+        color: #070707;
+        border-radius: 30px;
+        border: 1px solid black;
+        background-color: #0a6c5b;
+        font-size: 65px;
+        padding: 8px;
+        top: 40%;
+        left: 12%;
+
+    }
+
+    .img_4{
+        width: 100%;
+        height: 100%;
+    }
+
+    .a_proyectos .img_4{
+        width: 100%;
+        transition-property: bacground-color, transform;
+        transition-duration: 2s;
+    }
+
+    .a_proyectos .img_4:hover{
+        background-color: #0a6c5cc9;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .section_contacto{
+        width: 100%;
+        background-color: #555555;
+        background-image: url(img/img_55.png);
+        background-size: cover;
+        border: 2px solid black;
+        margin: 5px 0;
+        padding: 30px;
+    }
+
+    .box_form{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .formulario fieldset{
+        border: 1px solid black;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .formulario legend{
+        background-color: black;
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900px;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+    
+    .campo{
+        display: flex;
+        margin-bottom: 2rem;
+    
+    }
+    
+    .campo label{
+        flex-basis: 10rem;
+    }
+    
+    .campo input:not([type="radio"]),
+    .campo textarea,
+    .campo select{
+        flex: 1;
+        border: 1px solid #e1e1e1;
+        padding: 1rem;
+    }
+    
+    .boton{
+        background-color:#0a6c5b ;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1rem;
+        left: 50%;
+        border: 2px solid black;
+        width: 50%;
+    }
+    
+    .boton:hover{
+        background-color: #1f8d7b;
+        cursor: pointer;
+    }
+    
+    .footer{
+        width: 100%;
+        border: 2px solid black;
+        margin: 5px 0 0 ;
+        background-color: #000000;
+        text-align: center;
+        color: #fff;
+    }
+
+
+    .menu_footer .a_footer{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        margin: 35px 15px;
+    }
+
+
+    .icons{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .a_icons{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .legend{
+        margin: 15px;
+    }
+
+    .autor{
+        font-size: 15px;
+
+    }
+
+}
+
+@media(min-width:1000px){
+    .section_contacto{
+        width: 100%;
+        background-color: #555555;
+        background-image: url(img/img_55.png);
+        background-size: cover;
+        border: 2px solid black;
+        margin: 5px 0;
+        padding: 30px;
+    }
+
+    .box_form{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .formulario fieldset{
+        border: 1px solid black;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .formulario legend{
+        background-color: black;
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900px;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+    
+    .campo{
+        display: flex;
+        margin-bottom: 2rem;
+    
+    }
+    
+    .campo label{
+        flex-basis: 10rem;
+    }
+    
+    .campo input:not([type="radio"]),
+    .campo textarea,
+    .campo select{
+        flex: 1;
+        border: 1px solid #e1e1e1;
+        padding: 1rem;
+    }
+    
+    
+    
+    .boton{
+        background-color:#0a6c5b ;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1rem;
+        left: 50%;
+        border: 2px solid black;
+        width: 50%;
+    }
+    
+    .boton:hover{
+        background-color: #1f8d7b;
+        cursor: pointer;
+    }
+    
+    
+    .footer{
+        width: 100%;
+        border: 2px solid black;
+        margin: 5px 0 0 ;
+        background-color: #000000;
+        text-align: center;
+        color: #fff;
+    }
+
+
+    .menu_footer .a_footer{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        margin: 35px 15px;
+    }
+
+
+    .icons{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .a_icons{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .legend{
+        margin: 15px;
+    }
+
+    .autor{
+        font-size: 15px;
+
+    }
+
+}
+
+
+
