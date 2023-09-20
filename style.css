@@ -6,22 +6,24 @@
 
 * {
   margin: 0;
-  padding: 0;
+  pad8ding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Nothing Up My Pleasure", sans-serif;
 }
 
 nav {
-  background-image: linear-gradient(120deg, #0f0f0f 0%, #151615 100%);
+  background-color:black;
   height: 80px;
   width: 100%;
-  z-index: -10;
+  position: relative;
+  position: fixed;
+  z-index: 2;
 }
 
 .enlace {
   position: absolute;
-  padding: 20px 50px;
+  padding: 10px 50px;
 }
 
 .logo {
@@ -30,7 +32,7 @@ nav {
 
 nav ul {
   float: right;
-  margin-right: 20px;
+
 }
 
 nav ul li {
@@ -66,56 +68,6 @@ li a:hover {
 
 #check {
   display: none;
-}
-
-@media (max-width: 960px) {
-
-    
-  .enlace {
-    padding-left: 20px;
-  }
-  nav ul li a {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .checkbtn {
-    display: block;
-    font-size: 3rem;
-  }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgb(8, 8, 8);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.3s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 20px;
-  }
-
-  nav ul li a {
-    font-size: 2rem;
-  }
-
-  li a.active,
-  li a:hover {
-    background: none;
-    color: white;
-  }
-
-
-  #check:checked ~ul{
-    left: 0;
-  }
 }
 
 @media (min-width: 320px) {
@@ -1546,3 +1498,56 @@ li a:hover {
     font-size: 15px;
   }
 }
+
+
+@media (max-width: 960px) {
+
+    
+    .enlace {
+      padding-left: 20px;
+    }
+    nav ul li a {
+      font-size: 1rem;
+    }
+  }
+  
+@media (max-width: 800px) {
+    .checkbtn {
+      display: block;
+      font-size: 3rem;
+    }
+  
+    ul {
+      position: fixed;
+      width: 250px;
+      height: 250px;
+      background: rgb(8, 8, 8);
+      top: 80px;
+      right: -100%;
+      transition: all 0.3s;
+    }
+  
+    nav ul li {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      margin: 35px 0;
+      line-height: 20px;
+    }
+  
+    nav ul li a {
+      font-size: 15px;
+    }
+  
+    li a.active,
+    li a:hover {
+      background: none;
+      color: white;
+      cursor: pointer;
+    }
+  
+  
+    #check:checked ~ul{
+      right: 0;
+    }
+  }
